@@ -1,0 +1,30 @@
+作者：谢安
+邮箱：xiepaup@163.com
+日期：2017-03-05
+语言：GO 语言 + LibPcap
+
+
+目标服务： MySQL 、 Redis
+
+功能点：
+    -MySQL ：
+       1. 解析 INSERT、UPDATE、DELETE、SELECT
+       2. 解析 业务表名称 TABLENAME
+       3. 解析 来源服务器 IP
+       4. 解析 用户名    USERNAME
+       5. 分析 响应时间   基于Table 的response time，基于SQL 类型的Response Time
+    -Redis ：
+       1. 解析 STRING、LIST、SET、ZSET数据类型使用情况
+       2. 解析 命令执行频率
+       3. 解析 来源服务器 IP
+       4. 解析 响应时间  基于数据类型的Response TIME
+
+
+    - 通用功能 ：
+       1. 提供存储数据到 MySQL服务上
+       2. 提供存储数据到 文本文件
+       3. 支持实时对网络抓包
+       4. 支持离线对tcpdump包进行分析
+
+
+
