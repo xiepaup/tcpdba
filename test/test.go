@@ -1,12 +1,6 @@
-package main
+package test
 
-/**
- *
- * Author  :  xiean
- * EMail   :  xiepaup@163.com 
- * Date    :  2017-03-05
- * Project :  tcpdba
- **/
+
 
 
 import (
@@ -18,6 +12,14 @@ import (
 	"strings"
 	"time"
 )
+
+/**
+ *
+ * Author  :  xiean
+ * EMail   :  xiepaup@163.com
+ * Date    :  2017-03-05
+ * Project :  tcpdba
+ **/
 
 var (
 	device string = "en0"

@@ -1,9 +1,9 @@
 package com
 
 import (
-	"github.com/google/gopacket/pcap"
-	"fmt"
+
 )
+import "os"
 
 /**
  *
@@ -14,6 +14,10 @@ import (
  **/
 
 
-func CreateNetSocketHandler(isFile string) (pcap.Handle, error) {
-	fmt.Println("hh!")
+func FileExists(fileName string) bool {
+	if _, err := os.Stat(fileName); err == nil {
+		return true
+	}
+	return false
 }
+

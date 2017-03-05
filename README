@@ -1,10 +1,11 @@
-作者：谢安
-邮箱：xiepaup@163.com
-日期：2017-03-05
-语言：GO 语言 + LibPcap
+Author  ：XieAn
+Email   ：xiepaup@163.com
+Date    ：2017-03-05
+impTools：GO + LibPcap
 
 
 目标服务： MySQL 、 Redis
+
 
 功能点：
     -MySQL ：
@@ -27,4 +28,11 @@
        4. 支持离线对tcpdump包进行分析
 
 
+
+
+--计划采用多线程技术：
+--线程间通信采用 Queue 来通信
+---主线程负责抓包，判断是否达到终止条件
+---解析tcp层线程负责处理具体协议
+---后端线程负责记录数据
 

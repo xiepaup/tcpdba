@@ -11,12 +11,12 @@ import "time"
  **/
 
 type TcpdbaContext struct {
-	DeviceName      string
-	TcpPort         int32
+	DeviceName      string // eht0
+	TcpPort         int32  // 3306
 	IntervalSeconds int32  // 2 s
 	DurationSeconds int32  // 5*60 s
 
-	OpenTimeOut     int32
+	OpenTimeOut     int32  // 2 s
 
 	PackageType     string // MySQL or Redis
 
@@ -24,6 +24,9 @@ type TcpdbaContext struct {
 
 	OutPutType      int32  // Logfile , MySQLStore
 
+	FilterSrcIp     string
+
+	LocalIp         string // MyLocal Ipv4
 
 	startTime       time.Time
 	endTime         time.Time
@@ -41,6 +44,7 @@ func init() {
 		IntervalSeconds:2,
 		DurationSeconds:5 * 60,
 		OutPutType:1001,
+		OpenTimeOut:2,
 	}
 }
 
